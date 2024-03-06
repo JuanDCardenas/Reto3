@@ -13,5 +13,16 @@ Algoritmo para hayar numeros primos hasta n.
         		Si n es un numero primo
         			Escribir n
     
-    
+        A(Inicio) --> B[n=Numero entero]
+    B --> C[Para n hasta que i=n]
+    C -->D[i=2]
+    D -->E[Mientras i < n hacer]
+    E -->F{Si n%i==0}
+    F -->|si| G[n no es un numero primo]
+    F --> |no|I[es un numero primo]
+    G -->J
+    I --> J[i+=1]
+    J -->E
+    E -->K[Escribir numeros primos]
+    K -->L(Fin)
     
