@@ -12,4 +12,18 @@ Algoritmo para hayar numeros primos hasta n.
         			i+=1
         		Si n es un numero primo
         			Escribir n
-[![](https://mermaid.ink/img/pako:eNp1kEFLw0AQhf_KsCC02IJ6DEawTVKSqgj1tvEwJlsz2Ezq7gaRJP_d3SSCF_eyw5vvPR7TiaIplQjE8dR8FRVqCy9RzuDe_SJlKqhZwnp9BxvJ4VNbK92AYuu-14najNutfEaNwFChsQifrQIKeUa2HokkhTezEHkhlo_kkjQaILgdrYXSMxF7IukOBHxBYXg1THLi5d5QDzvJwK6KgdYNU6-zpvq31khCz02fyn-hnYeyaU5HQybpMrye19lY80-hvYxNoemN9JxmpjgzG_YeelgkxMtJECvhsBqpdBfuvJYLW6la5SJwY4n6Ixc5D47D1jaHby5EYHWrVqI9l2hVRPiusRbBEU9GDT98EYFx?type=png)](https://mermaid.live/edit#pako:eNp1kEFLw0AQhf_KsCC02IJ6DEawTVKSqgj1tvEwJlsz2Ezq7gaRJP_d3SSCF_eyw5vvPR7TiaIplQjE8dR8FRVqCy9RzuDe_SJlKqhZwnp9BxvJ4VNbK92AYuu-14najNutfEaNwFChsQifrQIKeUa2HokkhTezEHkhlo_kkjQaILgdrYXSMxF7IukOBHxBYXg1THLi5d5QDzvJwK6KgdYNU6-zpvq31khCz02fyn-hnYeyaU5HQybpMrye19lY80-hvYxNoemN9JxmpjgzG_YeelgkxMtJECvhsBqpdBfuvJYLW6la5SJwY4n6Ixc5D47D1jaHby5EYHWrVqI9l2hVRPiusRbBEU9GDT98EYFx)
+
+```mermaid
+flowchart TD
+    A(Inicio) --> B[n=Numero entero]
+    B --> C[Para n hasta que i=n]
+    C -->D[i=2]
+    D -->E[Mientras i < n hacer]
+    E -->F{Si n%i==0}
+    F -->|si| G[n no es un numero primo]
+    F --> |no|I[es un numero primo]
+    G -->J
+    I --> J[i+=1]
+    J -->E
+    E -->K[Escribir numeros primos]
+    K -->L(Fin)```
