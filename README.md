@@ -1,4 +1,6 @@
 # Reto3
+Algoritmo para hayar numeros primos hasta n.
+### Pseudocodigo
         n=Numero entero
         Para n en rango (1,n)
         	Si n>= 1  y n es un numero primo 
